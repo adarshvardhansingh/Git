@@ -1,0 +1,39 @@
+Configure identity (once): git config --global user.name "Your Name"
+
+Configure email (once): git config --global user.email "you@example.com"
+
+Create a new repo locally: git init
+
+Or clone an existing remote: git clone <repo-url>
+
+Check repository status: git status
+
+Stage changes (all files): git add .
+
+Stage a specific file: git add path/to/file
+
+Commit staged changes: git commit -m "Short, clear message"
+
+Create & switch to a new branch: git checkout -b feature/your-feature
+
+List branches: git branch
+
+Push branch to remote and set upstream: git push -u origin feature/your-feature
+
+Update local branch from remote: git pull (or git pull --rebase to rebase)
+
+Merge another branch into current branch: git merge branch-name
+
+Resolve conflicts (edit files), then git add <file> and git commit to finish merge
+
+Delete a local branch you no longer need: git branch -d branch-name
+
+Delete a remote branch: git push origin --delete branch-name
+
+Temporarily save uncommitted work: git stash and restore with git stash pop
+
+View history: git log --oneline
+
+Undo last local commit but keep changes staged: git reset --soft HEAD~1
+
+Force-sync local branch to remote (dangerous—use carefully): git push --force-with-lease
